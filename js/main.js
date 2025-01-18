@@ -56,12 +56,12 @@ async function manipularSubmissaoForm(evento) {
     const autoriaSemEspacos = removerEspacos(autoria);
 
     if (!validarConteudo(conteudoSemEspacos)) {
-        alert("É permitida a inclusão apenas de letras e espaços no campo conteúdo");
+        alert("É permitida a inclusão apenas de letras e espaços no campo conteúdo com no mínimo 10 caracteres");
         return
     }
 
     if (!validarAutoria(autoriaSemEspacos)) {
-        alert("É permitida a inclusão apenas de letras e espaços no campo autoria");
+        alert("É permitida a inclusão apenas de letras e espaços no campo autoria com no mínimo 3 caracteres e no máximo 15");
         return
     }
 
